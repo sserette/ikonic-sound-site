@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ikonic Sound</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <!--SoundCloud SDK-->
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">Ikonic Sound</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/news.html">News</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="page-scroll">Cities</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/chicago.html">Chicago</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/denver.html">Denver</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/detroit.html">Detroit</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/minneapolis.html">Minneapolis-St. Paul</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/roster.html">Roster</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/releases.html">Releases</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/song-of-the-day.html">Song of the Day</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="page-scroll">Free Stuff</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/ear-candy.html">Ear Candy</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/contests.html">Contests</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/grilled-cheese.html">Grilled Cheese</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="page-scroll" href="/about.html">About</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/team.html">The Team</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="page-scroll" href="/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading promo-text">DAWNING MUSIC</div>
+                <div class="intro-heading promo-text song">R(EIG)N</div>
+                <a href="#services" class="page-scroll btn btn-xl intro-button">Free Download</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Releases Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Releases</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div id="track-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Ikonic Sound 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://twitter.com/IkonicSound" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/ikonicsound/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://soundcloud.com/IkonicSound" target="_blank"><i class="fa fa-soundcloud"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Releases Modals -->
+    <div id="modal-list"></div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    
+    <!--SoundCloud API-->
+    <script>
+        SC.initialize({
+            client_id: "f6f03303a3871df8fc5dabdb5cfeb48b",
+            redirect_uri: "http://example.com/callback.html"
+        });
+        
+        var userId = 94807011;
+        
+        SC.get("/tracks", {
+            user_id: userId,
+            limit: 100
+        }, function(tracks) {
+            var tmp, tmp1, res, tmp_embed, tmp_tags = '';
+            for(var i = 0; i < tracks.length; i++) {
+                var release_id = "#track-list-" + i;
+                var release_id_title = "#track-title-" + i;
+                var embedded_player = "#embed-track-" + i;
+                tmp = tracks[i].title;
+                tmp1 = '<img src="' + tracks[i].artwork_url + '"/>';
+                tmp_embed = '<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + tracks[i].id + '&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>';
+                res = tmp1.replace("large", "crop");
+                var large = '<div class="col-md-4 col-sm-6 portfolio-item"><a href="#portfolioModal' + (i+1) + '" class="portfolio-link" data-toggle="modal"><div class="portfolio-hover"><div class="portfolio-hover-content"><i class="fa fa-play fa-3x"></i></div></div><img class="img-responsive" src="' + tracks[i].artwork_url + '" /></a></div>';
+                var res1 = large.replace("large", "crop");
+                $("<div/>").html(tmp).appendTo(release_id_title);
+                //$("<div/>").html(res).appendTo(release_id);
+                $("<div/>").html(tmp_embed).appendTo(embedded_player);
+                var modal = '<div class="portfolio-modal modal fade" id="portfolioModal' + (i+1) + '" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-content"><div class="close-modal" data-dismiss="modal"><div class="lr"><div class="rl"></div></div></div><div class="container"><div class="row"><div class="col-lg-8 col-lg-offset-2"><div class="modal-body"><h2>' + tracks[i].title + '</h2><div class="track-close-btn"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/' + tracks[i].id + '&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div><button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Track</button></div></div></div></div></div></div>';
+                $("#modal-list").append(modal);
+                $("#track-list").append(res1);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
